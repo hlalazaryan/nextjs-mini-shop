@@ -12,7 +12,6 @@ export default function Checkout() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full">
-      {/* Navigation */}
       <nav className="mb-8">
         <Link
           href="/"
@@ -45,7 +44,6 @@ export default function Checkout() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-        {/* Left Column: Checkout Form */}
         <div className="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-neutral-200/80 shadow-xs">
           <div className="mb-6">
             <h2 className="text-lg font-medium text-neutral-900">
@@ -151,7 +149,6 @@ export default function Checkout() {
           </form>
         </div>
 
-        {/* Right Column: Order Summary */}
         <div className="lg:col-span-5 bg-neutral-50/80 p-6 sm:p-8 rounded-2xl border border-neutral-200/80 sticky top-8">
           <h2 className="text-base font-semibold text-neutral-900 mb-4 pb-3 border-b border-neutral-200/70">
             Order Summary

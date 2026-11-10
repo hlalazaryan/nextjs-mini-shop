@@ -26,9 +26,7 @@ export default function ProductList({ products }: { products: any[] }) {
 
   return (
     <div className="space-y-8">
-      {/* Search and Filters Section */}
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
-        {/* Search Input */}
         <div className="relative w-full sm:max-w-xs">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-neutral-400">
             <svg
@@ -56,7 +54,6 @@ export default function ProductList({ products }: { products: any[] }) {
           />
         </div>
 
-        {/* Category Filter Buttons */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
           {categories.map((cat) => {
             const isActive = category === cat.key;
@@ -77,7 +74,6 @@ export default function ProductList({ products }: { products: any[] }) {
         </div>
       </div>
 
-      {/* Product Grid */}
       {filteredProducts.length === 0 ? (
         <div className="text-center py-20 px-4 bg-neutral-50/50 rounded-2xl border border-dashed border-neutral-200">
           <p className="text-neutral-500 text-sm">
@@ -95,7 +91,6 @@ export default function ProductList({ products }: { products: any[] }) {
                 href={`/product/${product.id}`}
                 className="flex flex-col h-full"
               >
-                {/* Image Container */}
                 <div className="relative aspect-square w-full p-8 bg-neutral-50/70 flex items-center justify-center overflow-hidden border-b border-neutral-100">
                   {product.image && (
                     <img
@@ -111,7 +106,6 @@ export default function ProductList({ products }: { products: any[] }) {
                   )}
                 </div>
 
-                {/* Info Container */}
                 <div className="flex flex-col flex-1 p-5 justify-between">
                   <div>
                     <h2 className="font-medium text-neutral-900 text-sm line-clamp-2 leading-snug group-hover:text-neutral-600 transition-colors">

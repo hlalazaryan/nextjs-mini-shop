@@ -17,7 +17,6 @@ export default async function Product({ params }: Props) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full">
-      {/* Breadcrumb Navigation */}
       <nav className="mb-8">
         <Link
           href="/"
@@ -40,9 +39,7 @@ export default async function Product({ params }: Props) {
         </Link>
       </nav>
 
-      {/* Main Product Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start">
-        {/* Left Column: Product Image */}
         <div className="bg-neutral-50/80 rounded-3xl p-8 sm:p-12 lg:p-16 border border-neutral-100 flex items-center justify-center min-h-[380px] sm:min-h-[460px]">
           {product.image && (
             <img
@@ -53,7 +50,6 @@ export default async function Product({ params }: Props) {
           )}
         </div>
 
-        {/* Right Column: Details & Actions */}
         <div className="flex flex-col justify-between">
           <div>
             {product.category && (
@@ -137,7 +133,6 @@ export default async function Product({ params }: Props) {
             </div>
           </div>
 
-          {/* Add to Cart Actions */}
           <div className="mt-8 pt-6 border-t border-neutral-100">
             <AddToCart product={product} />
           </div>

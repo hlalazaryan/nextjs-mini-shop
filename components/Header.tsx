@@ -41,7 +41,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Cart Bar */}
         <div className="py-3 border-t border-neutral-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-3 flex-wrap">
             <h2 className="font-semibold uppercase tracking-wider text-neutral-500">

@@ -8,8 +8,13 @@ export default function ClearAllItems() {
       className="cursor-pointer text-xs font-medium text-neutral-400 hover:text-red-600 transition-colors"
       onClick={() => {
         if (cartItems.length > 0) {
-          window.confirm("Are you sure you want to clear the cart?");
-          setCartItems([]);
+          const isConfirmed = window.confirm(
+            "Are you sure you want to clear the cart?",
+          );
+
+          if (isConfirmed) {
+            setCartItems([]);
+          }
         }
       }}
     >
