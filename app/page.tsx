@@ -6,7 +6,7 @@ import Checkout from "./checkout/page";
 
 export default async function Home() {
   "use cache";
-  const response = await fetch("https://fakestoreapi.com/products?limit=10");
+  const response = await fetch("https://fakestoreapi.com/products?limit=20");
   const products = await response.json();
 
   return (
@@ -16,7 +16,8 @@ export default async function Home() {
           Store Catalog
         </h1>
         <p className="mt-2 text-sm text-neutral-500 max-w-xl">
-          Explore our collection of essentials designed with minimalism and quality.
+          Explore our collection of essentials designed with minimalism and
+          quality.
         </p>
       </div>
 
